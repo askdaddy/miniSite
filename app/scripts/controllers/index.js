@@ -1,0 +1,1 @@
+define(['./testCtrl'], function () {});

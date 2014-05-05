@@ -1,0 +1,23 @@
+{
+    "name": "miniSite",
+    "version": "0.1.0",
+    "main": "index.html",
+    "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "devDependencies": {
+        "angular": "~1.2.1",
+        "angular-scenario": "~1.2.1",
+        "angular-route": "~1.2.1",
+        "angular-mocks": "~1.2.1",
+        "angular-resource": "~1.2.1",
+        "requirejs": "~2.1.9",
+        "requirejs-text": "~2.0.10",
+        "requirejs-domready": "~2.0.1",
+        "require-css": "~0.1.2"
+    }
+}
