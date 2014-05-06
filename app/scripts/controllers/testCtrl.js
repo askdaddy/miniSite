@@ -6,7 +6,6 @@ define(['./controllers'], function (controllers) {
     controllers.controller('testCtrl', ['$scope',
 
         function ($scope) {
-            console.log($scope);
             $scope.greeting = {
                 text: 'Hello seven...'
             };
