@@ -9,6 +9,9 @@ define(['app'], function (app) {
             $routeProvider.when('/test', {
                 templateUrl: 'views/test.html',
                 controller: 'testCtrl'
+            }).when('/alert', {
+                templateUrl: 'views/test-alert.html',
+                controller: 'alertCtrl'
             });
 
 

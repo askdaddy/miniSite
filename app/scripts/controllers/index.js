@@ -1,1 +1,1 @@
-define(['./testCtrl'], function () {});
+define(['./testCtrl', './testui/alertctrl'], function () {});

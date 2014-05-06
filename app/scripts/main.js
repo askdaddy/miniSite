@@ -7,7 +7,9 @@ require.config({
         angular: '../vendors/angular/angular',
         domReady: '../vendors/requirejs-domready/domReady',
         angularResource: '../vendors/angular-resource/angular-resource',
-        angularRoute: '../vendors/angular-route/angular-route'
+        angularRoute: '../vendors/angular-route/angular-route',
+        angularBooststrap: '../vendors/angular-bootstrap/ui-bootstrap-tpls',
+        tiwtterCSS: '../vendors/bootstrap-css/css/bootstrap'
     },
     shim: {
         // angular does not support AMD out of the box, put it in a shim
@@ -19,13 +21,16 @@ require.config({
         },
         angularRoute: {
             deps: ['angular']
+        },
+        angularBooststrap: {
+            deps: ['angular', 'css!tiwtterCSS']
         }
     },
     map: {
         '*': {
-            'css': '../vendors/require-css/css' // or whatever the path to require-css is
+            'css': '../vendors/require-css/css' // the path to require-css is
         }
     },
     // this is not twitter bootstrap,its sctipts/bootstrap.js
-    deps: ['css!../styles/bootstrap.min', 'bootstrap']
+    deps: ['bootstrap']
 });
