@@ -1,13 +1,21 @@
 /**
  * My first test controller
  */
-define(['./controllers'], function (controllers) {
+define(['./controllers', 'json'], function (controllers, JSON) {
     'use strict';
-    controllers.controller('testCtrl', ['$scope',
+    controllers.controller('testCtrl', ['$scope', '$location',
 
-        function ($scope) {
+        function ($scope, $location) {
             $scope.greeting = {
-                text: 'Hello seven...'
+                text: JSON.stringify({
+                    "Hello": "seven",
+                    "Good-bye": 456
+                }, ["Hello", "Good-bye"], "\t")
             };
+
+            $scope.jumpAlert = function () {
+                $location.path('/alert');
+            };
+
         }]);
 });
