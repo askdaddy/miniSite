@@ -6,7 +6,7 @@ define(['app'], function (app) {
     return app.config(['$locationProvider', '$routeProvider',
         function ($locationProvider, $routeProvider) {
             $locationProvider.html5Mode(false);
-            $locationProvider.hashPrefix('!');
+            //            $locationProvider.hashPrefix('!');
             $routeProvider.when('/test', {
                 templateUrl: 'views/test.html',
                 controller: 'testCtrl'
